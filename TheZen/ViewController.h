@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel  *deviceIdLabel;
+@property (weak, nonatomic) IBOutlet UILabel  *deviceStatusLabel;
+
+- (IBAction)start:(id)sender;
 
 @end
 

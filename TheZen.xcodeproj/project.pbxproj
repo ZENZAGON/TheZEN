@@ -14,6 +14,11 @@
 		25F773EA1AEBAB11001ECC99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F773E91AEBAB11001ECC99 /* Images.xcassets */; };
 		25F773ED1AEBAB11001ECC99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25F773EB1AEBAB11001ECC99 /* LaunchScreen.xib */; };
 		25F773F91AEBAB11001ECC99 /* TheZenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F773F81AEBAB11001ECC99 /* TheZenTests.m */; };
+		651DAA9E1AEC038700F3BF66 /* ZENDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAA9D1AEC038700F3BF66 /* ZENDeviceManager.m */; };
+		651DAAA41AEC04CC00F3BF66 /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651DAAA31AEC04CC00F3BF66 /* MEMELib.framework */; };
+		651DAAA61AEC04EA00F3BF66 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651DAAA51AEC04EA00F3BF66 /* CoreBluetooth.framework */; };
+		651DAAA91AEC095C00F3BF66 /* ZENDataAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAAA81AEC095C00F3BF66 /* ZENDataAnalyzer.m */; };
+		651DAAAC1AEC0C2500F3BF66 /* ZENData.m in Sources */ = {isa = PBXBuildFile; fileRef = 651DAAAB1AEC0C2500F3BF66 /* ZENData.m */; };
 		66F222E30DB51FE637EC097C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4A471B5E2260718B081F3E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,14 @@
 		25F773F21AEBAB11001ECC99 /* TheZenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheZenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F773F71AEBAB11001ECC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F773F81AEBAB11001ECC99 /* TheZenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheZenTests.m; sourceTree = "<group>"; };
+		651DAA9C1AEC038700F3BF66 /* ZENDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENDeviceManager.h; sourceTree = "<group>"; };
+		651DAA9D1AEC038700F3BF66 /* ZENDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENDeviceManager.m; sourceTree = "<group>"; };
+		651DAAA31AEC04CC00F3BF66 /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEMELib.framework; path = Framework/MEMELib.framework; sourceTree = "<group>"; };
+		651DAAA51AEC04EA00F3BF66 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		651DAAA71AEC095C00F3BF66 /* ZENDataAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENDataAnalyzer.h; sourceTree = "<group>"; };
+		651DAAA81AEC095C00F3BF66 /* ZENDataAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENDataAnalyzer.m; sourceTree = "<group>"; };
+		651DAAAA1AEC0C2500F3BF66 /* ZENData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENData.h; sourceTree = "<group>"; };
+		651DAAAB1AEC0C2500F3BF66 /* ZENData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENData.m; sourceTree = "<group>"; };
 		7473DCDFB38EB30987FAF9D6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7D3B3D28C857487649D789D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4A471B5E2260718B081F3E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651DAAA61AEC04EA00F3BF66 /* CoreBluetooth.framework in Frameworks */,
+				651DAAA41AEC04CC00F3BF66 /* MEMELib.framework in Frameworks */,
 				66F222E30DB51FE637EC097C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +111,12 @@
 				25F773E91AEBAB11001ECC99 /* Images.xcassets */,
 				25F773EB1AEBAB11001ECC99 /* LaunchScreen.xib */,
 				25F773DC1AEBAB11001ECC99 /* Supporting Files */,
+				651DAA9C1AEC038700F3BF66 /* ZENDeviceManager.h */,
+				651DAA9D1AEC038700F3BF66 /* ZENDeviceManager.m */,
+				651DAAA71AEC095C00F3BF66 /* ZENDataAnalyzer.h */,
+				651DAAA81AEC095C00F3BF66 /* ZENDataAnalyzer.m */,
+				651DAAAA1AEC0C2500F3BF66 /* ZENData.h */,
+				651DAAAB1AEC0C2500F3BF66 /* ZENData.m */,
 			);
 			path = TheZen;
 			sourceTree = "<group>";
@@ -138,6 +159,8 @@
 		D1D4EC1DA022F1386727330E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				651DAAA51AEC04EA00F3BF66 /* CoreBluetooth.framework */,
+				651DAAA31AEC04CC00F3BF66 /* MEMELib.framework */,
 				DA4A471B5E2260718B081F3E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -280,6 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				25F773E51AEBAB11001ECC99 /* ViewController.m in Sources */,
+				651DAAA91AEC095C00F3BF66 /* ZENDataAnalyzer.m in Sources */,
+				651DAA9E1AEC038700F3BF66 /* ZENDeviceManager.m in Sources */,
+				651DAAAC1AEC0C2500F3BF66 /* ZENData.m in Sources */,
 				25F773E21AEBAB11001ECC99 /* AppDelegate.m in Sources */,
 				25F773DF1AEBAB11001ECC99 /* main.m in Sources */,
 			);
@@ -408,6 +434,10 @@
 			baseConfigurationReference = 7D3B3D28C857487649D789D1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = TheZen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +450,10 @@
 			baseConfigurationReference = 7473DCDFB38EB30987FAF9D6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
 				INFOPLIST_FILE = TheZen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

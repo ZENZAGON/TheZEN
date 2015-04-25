@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <MEMELib/MEMELib.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Setting Application ID and Client Secret
+    [MEMELib setAppClientId:@"156174172984268" clientSecret:@"iqbmifna3zifk0ckob2b4v5xrh5b4nik"];
+    
     return YES;
 }
 
