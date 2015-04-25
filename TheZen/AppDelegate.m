@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // Setting Application ID and Client Secret
-    [MEMELib setAppClientId:@"156174172984268" clientSecret:@"iqbmifna3zifk0ckob2b4v5xrh5b4nik"];
+    [MEMELib setAppClientId:@"068128616028090" clientSecret:@"xvh9ty7q8o5rq7l9vg6u025py5ndj1pt"];
     
     return YES;
 }

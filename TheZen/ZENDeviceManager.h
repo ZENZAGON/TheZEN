@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MEMELib/MEMELib.h>
+
 
 typedef enum {
     ZEN_DEVICE_STATUS_PERFECT           = 0,
@@ -40,6 +42,7 @@ typedef enum {
 @interface ZENDeviceManager : NSObject
 
 @property (weak, nonatomic) id<ZENDeviceObserver> observer;
+@property (nonatomic) MEMELib *memeLib;
 
 - (void)connect;
 - (void)ready:(int)seconds;

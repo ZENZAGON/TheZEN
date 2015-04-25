@@ -8,7 +8,7 @@
 
 #import "ZENDeviceManager.h"
 #import "ZENDataAnalyzer.h"
-#import <MEMELib/MEMELib.h>
+
 
 #define ZEN_ID ""
 
@@ -26,7 +26,7 @@ typedef enum {
 @interface ZENDeviceManager() <MEMELibDelegate>
 
 @property (nonatomic, retain) ZENDataAnalyzer *dataAnalyzer;
-@property (nonatomic, strong) MEMELib *memeLib;
+
 @property (nonatomic, copy) NSString *memeId;
 @property (nonatomic, retain) CBPeripheral *meme;
 @property (nonatomic) BOOL calibration;
@@ -49,8 +49,8 @@ typedef enum {
         _isStarted = NO;
         _command = ZEN_DEVICE_COMMAND_NONE;
         
-        _memeLib = [MEMELib sharedInstance];
-        _memeLib.delegate = self;
+        //_memeLib = [MEMELib sharedInstance];
+        //[MEMELib sharedInstance].delegate = self;
         _memeId = @"3F3A322F-902B-AD7C-90F8-C571D2D28A4E";
         //[self.meme addObserver: self forKeyPath: @"centralManagerEnabled" options: NSKeyValueObservingOptionNew context:nil];
     }
@@ -60,6 +60,9 @@ typedef enum {
 
 - (void)connect
 {
+    //_memeLib = [MEMELib sharedInstance];
+    [MEMELib sharedInstance].delegate = self;
+    
     // Start Scanning
     MEMEStatus status = [_memeLib startScanningPeripherals];
     [self checkMEMEStatus: status];

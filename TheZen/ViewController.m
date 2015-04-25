@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZENDeviceManager.h"
+#import <MEMELib/MEMELib.h>
 
 @interface ViewController () <ZENDeviceObserver>
 
@@ -32,6 +33,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //_devMan = [[ZENDeviceManager alloc] init];
+    //_devStatus = ZEN_DEVICE_STATUS_STOPPED;
+    //MEMELib *memeLib = [MEMELib sharedInstance];
+    //_devMan.memeLib = memeLib;
     [_devMan connect];
 }
 
