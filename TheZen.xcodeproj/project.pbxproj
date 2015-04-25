@@ -189,6 +189,7 @@
 		25F773D11AEBAB11001ECC99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZEN;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = zenzagon;
 				TargetAttributes = {
